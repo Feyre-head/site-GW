@@ -1,0 +1,16 @@
+{
+  "name": "hub-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "npx tailwindcss -i ./tailwind.css -o ./dist/tailwind-output.css --watch",
+  "build": "npx tailwindcss -i ./tailwind.css -o ./dist/tailwind-output.css --minify"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}
