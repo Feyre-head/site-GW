@@ -38,16 +38,19 @@
 	data-overlay-onmobile="true">
 	<div id="wrap">
 
+		<!-- Manter o layout quando o header se torna "sticky" (fixo ao rolar a página). 
+     Inicialmente oculto com "hidden", mas pode ser exibido via JavaScript/CSS quando necessário. -->
 		<div class="lqd-sticky-placeholder hidden"></div>
+
+		<!-- Header principal do site, que se torna fixo -->
 		<header id="site-header home" class="main-header main-header-overlay sticky-header-noshadow"
 			data-sticky-header="true" data-sticky-values-measured="false">
+
+
+			<!--  Seção de contato visível apenas em dispositivos móveis -->
 			<section class="lqd-section lqd-hide-onstuck bg-no-repeat bg-center bg-cover bg-white-0 lg:hidden"
-				style="background-image: url('./assets/images/demo/start-hub-1/header-bar-bg\ \(5\).png');">
+				style="background-image: url('./assets/img/header-bar-bg.png');">
 				<div class="w-full flex items-center justify-center h-35">
-					<!-- <a
-						class="btn btn-solid text-11 font-medium tracking-1 mr-15 bg-white border-none uppercase rounded-20 text-black module-btn-xxs">
-						<span class="btn-txt" data-text="NEW!">NOVS PLANOS!</span>
-					</a> -->
 					<div class="ld-fancy-heading relative space-y-1">
 						<p class="ld-fh-element inline-block relative text-12 font-normal m-0 text-white tracking-0/5">
 							Suporte Técnico: 0800 647 4305
@@ -56,18 +59,11 @@
 							Email: contato@gwinternet.com.br
 						</p>
 					</div>
-
-					<!-- <a href="#contact" class="btn btn-naked btn-icon-right ml-10 text-12 text-blue-300"
-						data-localscroll="true">
-						<span class="btn-txt" data-text="Learn more">Saiba Mais!</span>
-						<span class="btn-icon">
-							<i aria-hidden="true" class="lqd-icn-ess icon-md-arrow-forward"></i>
-						</span>
-					</a> -->
 				</div>
 			</section>
 
-			<!-- Social -->
+
+			<!-- Icones Header Social -->
 			<section class="lqd-section lqd-hide-onstuck bg-white-0 -mb-40 pt-5 lg:hidden" data-custom-animations="true"
 				data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"opacity":0} , "animations":{"opacity":1}}'>
 				<div class="container p-0">
@@ -101,13 +97,13 @@
 				</div>
 			</section>
 
-			<!-- Header -->
+			<!-- Seção principal visível apenas em telas maiores (oculta em dispositivos médios com md:hidden) -->
 			<section class="lqd-section mt-40 lg:mt-0 md:hidden">
 				<div class="container p-0">
 					<div
 						class="w-full h-full flex items-center justify-between box-shadow-bottom transition-all pr-15 pl-5 rounded-6 bg-white p-10">
 
-						<!-- 🔷 Logotipo à esquerda -->
+						<!-- Logotipo ao meio -->
 						<div class="w-auto flex">
 							<a href="/" class="flex items-center">
 								<img src="./assets/img/LogoGWsm2.png" alt="Logo" class="ml-5 h-40 w-auto"
@@ -115,7 +111,7 @@
 							</a>
 						</div>
 
-						<!-- 🔷 Menu central -->
+						<!--  Menu central com links de navegação -->
 						<div class="w-auto flex mx-15">
 							<div class="module-primary-nav flex">
 								<div class="navbar-collapse inline-flex p-0 lqd-submenu-cover flex-grow-1 flex-shrink-1 overflow-visible h-auto"
@@ -124,6 +120,7 @@
 										data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}'
 										data-localscroll="true"
 										data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
+										<!-- Itens do menu -->
 										<li><a class="text-darkgreen leading-30" href="#">Home</a></li>
 										<li><a class="text-darkgreen leading-30" href="#pricing">Planos</a></li>
 										<li><a class="text-darkgreen leading-30"
@@ -144,7 +141,7 @@
 				</div>
 			</section>
 
-			<!-- Mobile Header -->
+			<!--  Cabeçalho para Mobile -->
 			<div class="lqd-mobile-sec relative">
 				<div
 					class="lqd-mobile-sec-inner navbar-header flex items-center justify-center w-full bg-white relative p-5">
@@ -177,12 +174,15 @@
 						</button>
 					</div>
 				</div>
+				<!-- Navegação para dispositivos móveis -->
 				<div class="lqd-mobile-sec-nav w-full absolute z-10">
 					<div class="mobile-navbar-collapse navbar-collapse collapse w-full" id="lqd-mobile-sec-nav"
 						aria-expanded="false" role="navigation">
 						<ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav nav"
 							data-localscroll="true"
 							data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
+
+							<!-- Link para a seção Home -->
 							<li>
 								<a href="#">Home</a>
 							</li>
@@ -203,15 +203,20 @@
 				</div>
 			</div>
 		</header>
+		<!-- Fim do cabeçalho principal -->
 
+
+		<!-- Conteúdo principal do site -->
 		<main class="content" id="lqd-site-content">
 
 			<div id="lqd-contents-wrap">
 
-				<!-- Start Banner -->
+				<!-- Início do Banner -->
 				<section class="lqd-section banner pt-240" id="banner">
+					<!-- Sobreposição de fundo com gradiente -->
 					<div class="background-overlay bg-transparent opacity-30"
 						style="background-image: linear-gradient(180deg, #DBE4FE 0%, #fff 85%);"></div>
+					<!-- Efeito de partículas no fundo -->
 					<div class="lqd-particles-bg-wrap lqd-overlay flex pointer-events-none">
 						<div class="ld-particles-container relative w-full lqd-particles-as-bg lqd-overlay flex h-450">
 							<div class="ld-particles-inner lqd-overlay flex pointer-events-none"
@@ -220,6 +225,8 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- Conteúdo do banner -->
 					<div class="container">
 						<div class="row">
 							<div class="col col-12 col-md-7 col-xl-6" data-custom-animations="true"
@@ -285,8 +292,7 @@
 											<div
 												class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 												<figure class="w-full relative">
-													<img width="48" height="10"
-														src="./assets/images/demo/start-hub-1/shapes-3.svg"
+													<img width="48" height="10" src="./assets/img/shapes/shapes-3.svg"
 														alt="banner image">
 												</figure>
 											</div>
@@ -301,14 +307,15 @@
 							</div>
 							<div class="col col-12 col-md-5 col-xl-6">
 								<div class="mb-20"></div>
+
+								<!-- Imagem do banner, visível apenas em telas grandes -->
 								<div class="lg:w-full lg:text-end sm:hidden bg-center bg-contain bg-no-repeat -mt-20"
-									style="background-image: url('./assets/images/demo/start-hub-1/shape-Blob.svg');">
+									style="background-image: url('./assets/img/shapes/shape-Blob.svg');">
 									<div class="lqd-imggrp-single block relative" data-float="ease-in-out">
 										<div
 											class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 											<figure class="w-full relative">
-												<img width="1080" height="763"
-													src="./assets/images/demo/start-hub-1/banner (2).png"
+												<img width="1080" height="763" src="./assets/img/bannerStart.png"
 													alt="banner image">
 											</figure>
 										</div>
@@ -318,8 +325,10 @@
 						</div>
 					</div>
 				</section>
-				<!-- End Banner -->
-				<!-- Start Process -->
+				<!-- Fim do Banner -->
+
+
+				<!-- Como Funciona -->
 				<section class="lqd-section process pt-60 pb-100" id="process" data-custom-animations="true"
 					data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"x": "-10px", "y": "10px", "opacity":0} , "animations":{"x": "0px", "y": "0px", "opacity":1}}'>
 					<div class="container">
@@ -332,8 +341,7 @@
 												class="lqd-imggrp-img-container inline-flex relative items-center justify-center w-50percent animation-element">
 												<figure class="w-full relative">
 													<img width="544" height="384"
-														src="./assets/images/demo/start-hub-1/rocket2.png"
-														alt="how it work">
+														src="./assets/img/bannerComofunciona .png" alt="how it work">
 												</figure>
 											</div>
 										</div>
@@ -353,7 +361,7 @@
 									</div>
 								</div>
 								<div class="w-full pt-80 -mt-60 mb-0 bg-no-repeat bg-center transition-all bg-auto module-icon-box"
-									style="background-image: url('./assets/images/demo/start-hub-1/lines.svg');">
+									style="background-image: url('./assets/img/shapes/lines.svg');">
 									<div class="container">
 										<div class="row items-center -mr-20 -ml-20">
 											<div class="col col-6 col-md-3 text-center">
@@ -427,25 +435,24 @@
 						</div>
 					</div>
 				</section>
-				<!-- End Process -->
+				<!-- Fim como funciona -->
 
-				<!-- Start BG Shape -->
+				<!-- BG Decorativo -->
 				<section class="lqd-section bg-shape -mt-120 -mb-200 p-0 lg:hidden">
 					<div class="container-fluid p-0">
 						<div class="lqd-imggrp-single block relative">
 							<div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
 								<figure class="w-full relative">
-									<img width="1256" height="287"
-										src="./assets/images/demo/start-hub-1/shape-decorative-bg.svg"
+									<img width="1256" height="287" src="./assets/img/shapes/shape-decorative-bg.svg"
 										alt="background image shape">
 								</figure>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- End BG Shape -->
+				<!-- Fim BG Decorativo -->
 
-				<!-- Start About -->
+				<!-- Informativo -->
 				<section class="lqd-section about pt-120" id="about">
 					<div class="container">
 						<div class="row">
@@ -672,17 +679,17 @@
 						</div>
 					</div>
 				</section>
-				<!-- End About -->
+				<!-- Fim Informativo -->
 
 
-				<!-- Start Pricing -->
+				<!-- Inicio Planos -->
 				<section class="lqd-section pricing pt-60 pb-360 bg-transparent transition-all" id="pricing"
 					data-section-luminosity="dark"
 					style="background-image: linear-gradient(90deg, #2b3b4f 0%, #191C33 100%);" data-parallax="true"
 					data-parallax-options='{ "start": "top bottom", "end": "bottom+=0px top"}'
 					data-parallax-from='{"y": "120px"}' data-parallax-to='{"y": "0"}'>
 					<div class="background-overlay bg-bottom-center bg-no-repeat opacity-100 transition-all"
-						style="background-image: url(./assets/images/demo/start-hub-1/bubbles-bg.svg);"></div>
+						style="background-image: url(./assets/img/shapes/bubbles-bg.svg);"></div>
 					<div class="lqd-shape lqd-shape-top" data-negative="false">
 						<svg class="w-1em h-1em left-50percent -translatex-50percent" xmlns="http://www.w3.org/2000/svg"
 							viewbox="0 0 1000 100" preserveaspectratio="none">
@@ -701,8 +708,7 @@
 										<div
 											class="w-50percent lqd-imggrp-img-container inline-flex relative items-center justify-center animation-element">
 											<figure class="w-full relative">
-												<img width="368" height="374"
-													src="./assets/images/demo/start-hub-1/shape-pricing1.png"
+												<img width="368" height="374" src="./assets/img/bannerPlanosSimples.png"
 													alt="pricing">
 											</figure>
 										</div>
@@ -731,28 +737,7 @@
 								<div class="module-pricing -mb-340 pt-15 pb-10 sm:m-0">
 									<div class="lqd-tabs lqd-tabs-style-9 lqd-tabs-style-9-alt2 flex flex-col lqd-nav-underline- lqd-tabs-nav-items-not-expanded"
 										data-tabs-options='{"trigger": "click"}'>
-										<!-- BOTÕES PARA TROCAR ENTRE MENSAL E ANUAL -->
-										<!-- <nav class="lqd-tabs-nav-wrap mb-2/5em">
-							<ul class="reset-ul lqd-tabs-nav flex items-center flex-wrap justify-center relative"
-								role="tablist">
-								<li data-controls="lqd-tab-pricing-monthly" role="presentation">
-									<a class="text-13 font-medium tracking-0 block active"
-										href="#lqd-tab-pricing-monthly" aria-expanded="false"
-										aria-controls="lqd-tab-pricing-monthly" role="tab"
-										data-bs-toggle="tab">
-										<span class="lqd-tabs-nav-txt">Mensal</span>
-									</a>
-								</li>
-								<li data-controls="lqd-tab-pricing-annual" role="presentation">
-									<a class="text-13 font-medium tracking-0 block"
-										href="#lqd-tab-pricing-annual" aria-expanded="false"
-										aria-controls="lqd-tab-pricing-annual" role="tab"
-										data-bs-toggle="tab">
-										<span class="lqd-tabs-nav-txt">Anual - Economize 30%</span>
-									</a>
-								</li>
-							</ul>
-						</nav> -->
+
 										<div class="lqd-tabs-content relative">
 											<div id="lqd-tab-pricing-monthly" role="tabpanel"
 												class="lqd-tabs-pane fade active show">
@@ -1141,107 +1126,16 @@
 						</div>
 					</div>
 				</section>
-				<!-- End Pricing -->
+				<!-- Fim Planos -->
 
-
-				<!-- Start Monitoring -->
-				<!-- <section class="lqd-section analysis pt-60 bg-transparent transition-all" id="analysis"
-					style="background-image: linear-gradient(180deg, #DBE4FE 0%, #fff 15%);">
-					<div class="container">
-						<div class="row">
-							<div class="col col-12">
-								<div class="module-img mt-0 px-5percent -mb-300">
-									<div class="lqd-imggrp-single block relative" data-parallax="false"
-										data-parallax-options='{ "start": "top bottom", "end": "bottom-=150% top"}'
-										data-parallax-from='{"scaleX":0.6, "scaleY":0.6, "opacity":0.2, "transformOrigin": "% % px"}'
-										data-parallax-to='{"scaleX":1, "scaleY":1, "opacity":1, "transformOrigin": "50% 50% 0px"}'>
-										<div
-											class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
-											<figure class="w-full relative">
-												<img width="1903" height="647"
-													src="./assets/images/demo/start-hub-1/features-bg.png"
-													alt="features">
-											</figure>
-										</div>
-									</div>
-								</div>
-								<div class="module-content px-10percent">
-									<div class="container p-0">
-										<div class="row m-0">
-											<div class="col col-12 col-md-7 col-xl-5 pt-20 px-0 pb-0 sm:p-0"
-												data-custom-animations="true"
-												data-ca-options='{"animationTarget": ".btn, .animation-element", "startDelay":100, "ease": "power4.out", "initValues":{"y": "63px", "rotationY":60, "opacity":0, "transformOrigin": "50% 50% 120px"} , "animations":{"y": "0px", "rotationY":0, "opacity":1, "transformOrigin": "50% 50% 0px"}}'>
-												<div class="mb-20 ld-fancy-heading relative animation-element">
-													<h2 class="ld-fh-element inline-block relative lqd-highlight-classic lqd-highlight-grow-left tracking-0 mt-0/75em mb-0 sm:m-0 leading-45"
-														data-inview="true" data-transition-delay="true"
-														data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'>
-														Monitoramento em tempo real da sua <mark
-															class="lqd-highlight"><span
-																class="lqd-highlight-txt">conexão.</span><span
-																class="lqd-highlight-inner bg-green-200 bottom-0 left-0"></span></mark>
-													</h2>
-												</div>
-												<div class="hidden sm:block lqd-imggrp-single relative">
-													<div
-														class="lqd-imggrp-img-container inline-flex relative items-center justify-center animation-element">
-														<figure class="w-full relative">
-															<img width="681" height="669"
-																src="./assets/images/demo/start-hub-1/features.png"
-																alt="features">
-														</figure>
-													</div>
-												</div>
-												<div class="mb-20 ld-fancy-heading relative animation-element">
-													<p
-														class="ld-fh-element inline-block relative text-17 leading-22 mb-0/25em">
-														Acompanhe a qualidade da sua conexão com ferramentas
-														inteligentes e suporte técnico sempre que precisar. Você no
-														controle, em tempo real. </p>
-												</div>
-												<a href="#pricing"
-													class="text-13 font-medium text-emerlad-500 btn btn-naked btn-icon-right btn-hover-swp animation-element"
-													data-localscroll="true">
-													<span class="btn-txt" data-text="Start Your Shop">Escolha seu
-														plano</span>
-													<span class="btn-icon">
-														<i aria-hidden="true"
-															class="lqd-icn-ess icon-ion-ios-arrow-forward"></i>
-													</span>
-													<span class="btn-icon mr-10">
-														<i aria-hidden="true"
-															class="lqd-icn-ess icon-ion-ios-arrow-forward"></i>
-													</span>
-												</a>
-											</div>
-											<div class="col col-12 col-md-5 col-xl-7 xs:hidden text-end">
-												<div class="lqd-imggrp-single block relative">
-													<div
-														class="lqd-imggrp-img-container inline-flex relative module-right w-65percent items-center justify-center">
-														<figure class="w-full relative">
-															<img width="681" height="669"
-																src="./assets/images/demo/start-hub-1/features.png"
-																alt="features">
-														</figure>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-				<!-- End Monitoring -->
-
-				<!-- Support -->
+				<!-- Suporte -->
 				<section class="lqd-section how-it-work pt-80 pb-80" id="how-it-work">
 					<div class="container">
 						<div class="row">
 							<div class="col col-md-6 p-0" data-custom-animations="true"
 								data-ca-options='{"animationTarget": ".btn, h2", "ease": "power4.out", "initValues":{"x": "-10px", "y": "10px", "opacity":0} , "animations":{"x": "0px", "y": "0px", "opacity":1}}'>
 								<div class="module-title flex flex-col h-full relative bg-size bg-no-repeat bg-center-right transition-all pt-10 px-10 mr-50 sm:mr-0"
-									style="background-image: url('./assets/images/demo/start-hub-1/help.png');">
+									style="background-image: url('./assets/img/help.png');">
 									<div class="w-full mb-20">
 										<a href="#how-it-work"
 											class="btn btn-solid rounded-20 text-15 bg-blue-100 text-darkgreen module-btn-xs"
@@ -1373,14 +1267,14 @@
 					</div>
 				</section>
 			</div>
+			<!-- Fim Suporte -->
 		</main>
 
-		<!-- Start Location -->
+		<!-- Onde Estamos -->
 		<section class="lqd-section testimonials py-80 transition-all bg-slate-900 " data-section-luminosity="dark"
 			data-custom-animations="true"
 			data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"x": "-10px", "y": "10px", "opacity":0} , "animations":{"x": "0px", "y": "0px", "opacity":1}}'>
-			<!-- <div class="background-overlay opacity-50 bg-no-repeat bg-center transition-all "
-				style="background-image: url('./assets/images/demo/start-hub-1/bg-lines.svg');"></div> -->
+
 			<div class="lqd-shape lqd-shape-top" data-negative="false">
 				<svg class="lqd-custom-shape h-15px -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 9"
 					preserveAspectRatio="none">
@@ -1411,7 +1305,7 @@
 					<div class="flex flex-col md:flex-row justify-center max-w-[1200px] items-center gap-6 ">
 
 						<!-- BLOCO 1 -->
-						<div class="flex md:flex-col lg:flex-col gap-6 w-full lg:w-1/2 items-start">							
+						<div class="flex md:flex-col lg:flex-col gap-6 w-full lg:w-1/2 items-start">
 							<div class="p-6 rounded-lg text-white bg-gray-800 min-h-[180px] w-full md:w-1/2">
 								<h4 class="text-md font-semibold mb-2 text-white">Itapejara D'Oeste</h4>
 								<p class="flex items-center">Av. Manuel Ribas, 1140 - Sala 01 - Centro</p>
@@ -1428,7 +1322,7 @@
 						</div>
 
 						<!-- BLOCO 2 -->
-						<div class="flex md:flex-col lg:flex-col gap-6 w-full lg:w-1/2 items-start">							
+						<div class="flex md:flex-col lg:flex-col gap-6 w-full lg:w-1/2 items-start">
 							<div class="p-6 rounded-lg text-white bg-gray-800 min-h-[180px] w-full md:w-1/2">
 								<h4 class="text-md font-semibold mb-2 text-white">Espigão Alto do Iguaçu</h4>
 								<p class="flex items-center">Av. Brasília, 501 - Centro</p>
@@ -1446,9 +1340,9 @@
 				</div>
 			</div>
 		</section>
-		<!-- End Location -->
+		<!-- Fim Onde Estamos -->
 
-		<!-- Start Footer -->
+		<!-- Inicio Footer -->
 		<footer id="site-footer" class="main-footer">
 			<section class="lqd-section footer-content pt-40 text-black" data-section-luminosity="dark">
 				<div class="container">
@@ -1458,7 +1352,8 @@
 								<div
 									class="w-35percent lqd-imggrp-img-container inline-flex relative items-center justify-center">
 									<figure class="w-full relative">
-										<img width="406" height="80" src="./Logo.png" alt="START HUB ONE">
+										<img width="406" height="80" src="assets/img/Logo.png" alt="Logo GW Telecom"
+											class="w-full h-auto object-contain">
 									</figure>
 								</div>
 							</div>
@@ -1571,7 +1466,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="lqd-section module-bottom text-center mt-60 mb-40 lg:mb-0" data-section-luminosity="dark">
+			<section class="lqd-section module-bottom text-center mt-40 mb-5 lg:mb-0" data-section-luminosity="dark">
 				<div class="container">
 					<div class="row justify-center">
 						<div class="col col-12 col-lg-8 mx-auto">
@@ -1586,7 +1481,7 @@
 			</section>
 		</footer>
 	</div>
-	<!--End Footer-->
+	<!--Fim Footer-->
 
 	<!-- GDPR -->
 	<div id="lqd-gdpr" class="lqd-gdpr lqd-gdpr-visible lqd-gdpr-ready">
@@ -1599,187 +1494,7 @@
 	</div>
 	<!-- /GDPR -->
 
-	<!-- Contact modal -->
-	<div id="contact-modal" class="lity-modal lqd-modal lity-hide" data-modal-type="fullscreen">
-		<div class="lqd-modal-inner">
-			<div class="lqd-modal-head"></div>
-			<section class="lqd-modal-content link-black bg-center bg-cover bg-norepeat"
-				style="background-image: url(./assets/images/common/modal-bg.jpeg);">
-				<div class="container min-h-100vh flex items-center flex-wrap">
-					<div class="w-55percent relative flex flex-col sm:w-full">
-						<div class="flex flex-col items-start justify-center py-10 pr-100 pl-10 module-content">
-							<div class="ld-fancy-heading">
-								<h2 class="ld-fh-element mb-0/5em text-120 text-black leading-0/8em font-medium">Send a
-									<span>message.</span>
-								</h2>
-							</div>
-							<div class="ld-fancy-heading">
-								<p class="ld-fh-element text-18  mb-0/5em">We're here to answer any question you may
-									have.</p>
-							</div>
-							<div class="w-full flex flex-row flex-grow-1 gap-10 module-info sm:flex-col sm:flex-wrap">
-								<div class="w-50percent flex flex-col gap-10">
-									<div class="ld-fancy-heading relative">
-										<h6
-											class="ld-fh-element text-14 font-bold text-black mb-0/5em tracking-0  mb-0/5em inline-block relative">
-											careers</h6>
-									</div>
-									<div class="ld-fancy-heading relative">
-										<p
-											class="ld-fh-element text-16 leading-1/2em mb-0/5em  mb-0/5em inline-block relative">
-											Would you like to join our growing team?</p>
-									</div>
-									<div class="ld-fancy-heading relative">
-										<p
-											class="ld-fh-element mb-0/5em inline-block relative text-16 font-bold leading-1/2em text-black">
-											careers@hub.com</p>
-									</div>
-								</div>
-								<div class="w-50percent flex flex-col gap-10 pl-15 sm:pl-0">
-									<div class="ld-fancy-heading relative">
-										<h6
-											class="ld-fh-element text-14 font-bold text-black mb-0/5em tracking-0  mb-0/5em inline-block relative">
-											Feedbacks</h6>
-									</div>
-									<div class="ld-fancy-heading relative">
-										<p
-											class="ld-fh-element text-16 leading-1/2em mb-0/5em  mb-0/5em inline-block relative">
-											Have a project in mind? Send a message.</p>
-									</div>
-									<div class="ld-fancy-heading relative">
-										<p class="ld-fh-element mb-0/5em inline-block relative">
-											<span class="text-16 font-bold leading-1/2em text-black">info@hub.com
-											</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="w-45percent relative flex flex-col sm:w-full module-form">
-						<div
-							class="lqd-contact-form lqd-contact-form-inputs-underlined lqd-contact-form-button-lg lqd-contact-form-button-block p-10 sm:p-0">
-							<div role="form">
-								<div class="screen-reader-response">
-									<p role="status" aria-live="polite" aria-atomic="true"></p>
-								</div>
-								<form action="./assets/php/mailer.php" method="post" class="lqd-cf-form"
-									novalidate="novalidate" data-status="init">
-									<div class="row -mr-15 -ml-15">
-										<div class="col col-12 col-md-6 px-15">
-											<p>
-												<span class="lqd-form-control-wrap text">
-													<input class="text-13 text-black border-black-20 bg-transparent"
-														type="text" name="name" value="" size="40" aria-required="true"
-														aria-invalid="false" placeholder="What's your name?">
-												</span>
-											</p>
-										</div>
-										<div class="col col-12 col-md-6 px-15">
-											<p>
-												<span class="lqd-form-control-wrap email">
-													<input class="text-13 text-black border-black-20 bg-transparent"
-														type="email" name="email" value="" size="40"
-														aria-required="true" aria-invalid="false"
-														placeholder="Email address">
-												</span>
-											</p>
-										</div>
-										<div class="col col-12 col-md-6 px-15">
-											<p>
-												<span class="lqd-form-control-wrap tel">
-													<input class="text-13 text-black border-black-20 bg-transparent"
-														type="text" name="topic" value="" size="40" aria-required="true"
-														aria-invalid="false" placeholder="Select a Discussion Topic">
-												</span>
-											</p>
-										</div>
-										<div class="col col-12 col-md-6 px-15">
-											<p>
-												<span class="lqd-form-control-wrap text">
-													<input class="text-13 text-black border-black-20 bg-transparent"
-														type="text" name="budget" value="" size="40"
-														aria-required="true" aria-invalid="false"
-														placeholder="What's your budget?">
-												</span>
-											</p>
-										</div>
-										<div class="col col-12 col-12 px-15">
-											<p>
-												<span class="lqd-form-control-wrap textarea">
-													<textarea class="text-13 text-black border-black-20 bg-transparent"
-														name="message" cols="10" rows="6" aria-required="true"
-														aria-invalid="false"
-														placeholder="Tell us about your project"></textarea>
-												</span>
-											</p>
-										</div>
-										<div class="col col-12 text-center px-15">
-											<input type="submit" value="— send message"
-												class="lqd-cf-form-control text-16 uppercase font-medium leading-1em tracking-1 font-bold bg-primary text-white rounded-100 border-none">
-											<p class="mt-1/25em text-black">— copy email: info@liquid-themes.com</p>
-										</div>
-									</div>
-								</form>
-								<div class="lqd-cf-response-output"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="lqd-modal-foot"></div>
-		</div>
-	</div>
-	<!-- Contact modal -->
-
-	<!-- Mini Contact Modal -->
-	<!-- <div id="modal-mini" class="lqd-modal lity-hide" data-modal-type="box">
-		<div class="lqd-modal-inner">
-			<div class="lqd-modal-head">
-				<h2>Entre em contato</h2>
-			</div>
-			<div class="lqd-modal-content">
-				<div
-					class="lqd-contact-form lqd-contact-form-inputs-circle lqd-contact-form-button-block lqd-contact-form-inputs-md">
-					<div role="form" lang="pt-br">
-						<div class="screen-reader-response">
-							<p role="status" aria-live="polite" aria-atomic="true"></p>
-						</div>
-						<form action="./assets/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate"
-							data-status="init">
-							<p>
-								<span class="lqd-form-control-wrap">
-									<input class="px-2em border-black-10 text-slate-400" type="text" name="name"
-										value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nome">
-								</span>
-							</p>
-							<p>
-								<span class="lqd-form-control-wrap">
-									<input class="px-2em border-black-10 text-slate-400" type="email" name="email"
-										value="" size="40" aria-required="true" aria-invalid="false"
-										placeholder="Email">
-								</span>
-							</p>
-							<p>
-								<span class="lqd-form-control-wrap">
-									<textarea class="px-2em border-black-10 text-slate-400" name="message" cols="10"
-										rows="3" aria-invalid="false" placeholder="Mensagem"></textarea>
-								</span>
-							</p>
-							<p>
-								<input type="submit" value="Enviar"
-									class="has-spinner bg-primary text-white border-none">
-							</p>
-						</form>
-						<div class="lqd-cf-response-output"></div>
-					</div>
-				</div>
-			</div>
-			<div class="lqd-modal-foot"></div>
-		</div>
-	</div> -->
-	<!-- Mini Contact Modal -->
-
+	<!-- Scripts -->
 	<script src="./assets/vendors/jquery.min.js"></script>
 	<script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
 	<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
@@ -1806,7 +1521,7 @@
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-	<!-- Start custom cursor -->
+	<!-- Cursor personalizado -->
 	<div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
 	<div
 		class="lqd-cc--el lqd-cc-solid lqd-cc-explore flex items-center justify-center rounded-full fixed pointer-events-none">
@@ -1854,36 +1569,30 @@
 		</div>
 	</div>
 	<div class="lqd-cc lqd-cc--outer fixed top-0 left-0 pointer-events-none"></div>
-	<!-- End custom cursor -->
+	<!-- Fim cursos personalizado -->
 
-	<template id="lqd-temp-snickersbar">
-		<div class="lqd-snickersbar flex flex-wrap lqd-snickersbar-in" data-item-id>
-			<div class="lqd-snickersbar-inner flex flex-wrap items-center">
-				<div class="lqd-snickersbar-detail">
-					<p class="lqd-snickersbar-addding-temp mt-0mb-0 hidden">Adding {{itemName}} to cart</p>
-					<p class="lqd-snickersbar-added-temp mt-0mb-0 hidden">Added {{itemName}} to cart</p>
-					<p class="lqd-snickersbar-msg flex items-center mt-0mb-0"></p>
-					<p class="lqd-snickersbar-msg-done flex items-center mt-0mb-0"></p>
-				</div>
-				<div class="lqd-snickersbar-ext ml-1/5em"></div>
-			</div>
-		</div>
-	</template>
-	<template id="lqd-temp-sticky-header-sentinel">
-		<div class="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>
-	</template>
-	<div class="lity" role="dialog" aria-label="Dialog Window (Press escape to close)" tabindex="-1"
-		data-modal-type="default" style="display: none;">
-		<div class="lity-backdrop"></div>
-		<div class="lity-wrap" data-lity-close role="document">
-			<div class="lity-loader" aria-hidden="true">Loading...</div>
-			<div class="lity-container">
-				<div class="lity-content"></div>
-			</div>
-			<button class="lity-close" type="button" aria-label="Close (Press escape to close)"
-				data-lity-close>&times;</button>
-		</div>
-	</div>
+
+      <!-- Área para ícones, botões ou outros elementos extras -->
+      <div class="lqd-snickersbar-ext ml-1/5em"></div>
+
+    </div>
+  </div>
+</template>
+
+<!-- Template usado como sentinela para ativar o cabeçalho fixo (sticky header) ao rolar a página -->
+<template id="lqd-temp-sticky-header-sentinel">
+  <div class="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>
+</template>
+
+<!-- Estrutura de modal (janela flutuante) usada para exibir conteúdo dinâmico, como imagens, vídeos ou formulários -->
+<div class="lity" role="dialog" aria-label="Dialog Window (Press escape to close)" tabindex="-1"
+     data-modal-type="default" style="display: none;">
+
+  <!-- Fundo escurecido atrás do modal -->
+  <div class="lity-backdrop"></div>
+
+</div>
+
 </body>
 
 </html>

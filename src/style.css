@@ -1,0 +1,9 @@
+@import "tailwindcss/preflight";
+
+/* src/style.css */
+/* @tailwind base; */
+/* @tailwind utilities; */
+
+/* seus imports do tema */
+@import '../assets/css/theme.min.css';
+@import '../assets/css/utility.min.css';
