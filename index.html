@@ -15,6 +15,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="./assets/images/common/og-image.jpg">
 
+
 	<link rel="stylesheet" href="./assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
 	<link rel="stylesheet" href="./assets/css/theme.min.css">
 	<link rel="stylesheet" href="./assets/css/utility.min.css">
@@ -22,6 +23,7 @@
 	<link rel="stylesheet" href="./assets/css/demo/start-hub-1/start-hub-1.css">
 	<link rel="stylesheet" href="./dist/tailwind-output.css" />
 	<link rel="shortcut icon" href="./assets/img/Favicon3.png" type="image/x-icon">
+	<link rel="stylesheet" href="src/" />
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +31,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Nunito:wght@400;600;700&family=Roboto&display=swap"
 		rel="stylesheet">
+	<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
 	<title>GW Telecom</title>
 </head>
@@ -37,6 +40,9 @@
 	data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="custom" data-mobile-logo-alignment="default"
 	data-overlay-onmobile="true">
 	<div id="wrap">
+
+		<!-- Div para o React renderizar o conteúdo -->
+		<div id="root"></div>
 
 		<!-- Manter o layout quando o header se torna "sticky" (fixo ao rolar a página). 
      Inicialmente oculto com "hidden", mas pode ser exibido via JavaScript/CSS quando necessário. -->
@@ -65,7 +71,13 @@
 
 			<!-- Icones Header Social -->
 			<section class="lqd-section lqd-hide-onstuck bg-white-0 -mb-40 pt-5 lg:hidden" data-custom-animations="true"
-				data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"opacity":0} , "animations":{"opacity":1}}'>
+				data-ca-options='{
+				"animationTarget": ".animation-element",
+				"ease": "power4.out",
+				"initValues": { "opacity": 0 },
+				"animations": { "opacity": 1 }
+			}'>
+
 				<div class="container p-0">
 					<div class="w-full flex items-center justify-between">
 						<div
@@ -341,7 +353,8 @@
 												class="lqd-imggrp-img-container inline-flex relative items-center justify-center w-50percent animation-element">
 												<figure class="w-full relative">
 													<img width="544" height="384"
-														src="./assets/img/bannerComofunciona .png" alt="Banner GW Telecom">
+														src="./assets/img/bannerComofunciona .png"
+														alt="Banner GW Telecom">
 												</figure>
 											</div>
 										</div>
@@ -377,6 +390,7 @@
 														<p class="text-14 leading-20 text-secondary">Informe seu
 															endereço e verifique se nossa rede de
 															fibra óptica está disponível na sua região.
+														</p>
 													</div>
 												</div>
 											</div>
@@ -393,6 +407,7 @@
 														<p class="text-14 leading-20 text-secondary">Temos planos para
 															todos os perfis: do básico ao ultra-rápido.
 															Você escolhe o que melhor atende sua rotina.
+														</p>
 													</div>
 												</div>
 											</div>
@@ -409,6 +424,7 @@
 														<p class="text-14 leading-20 text-secondary">Nossa equipe
 															técnica agenda e realiza a instalação com rapidez e
 															eficiência, sem dor de cabeça.
+														</p>
 													</div>
 												</div>
 											</div>
@@ -425,6 +441,7 @@
 														<p class="text-14 leading-20 text-secondary">Comece a navegar
 															com estabilidade, velocidade real e suporte sempre que
 															precisar.
+														</p>
 													</div>
 												</div>
 											</div>
@@ -1271,9 +1288,15 @@
 		</main>
 
 		<!-- Onde Estamos -->
-		<section class="lqd-section testimonials py-80 transition-all bg-slate-900 " data-section-luminosity="dark"
-			data-custom-animations="true"
-			data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"x": "-10px", "y": "10px", "opacity":0} , "animations":{"x": "0px", "y": "0px", "opacity":1}}'>
+		<section class="lqd-section testimonials py-80 transition-all bg-slate-900" data-section-luminosity="dark"
+			data-custom-animations="true" data-ca-options='{
+				"animationTarget": ".animation-element",
+				"ease": "power4.out",
+				"initValues": { "x": "-10px", "y": "10px", "opacity": 0 },
+				"animations": { "x": "0px", "y": "0px", "opacity": 1 }
+			}'>
+
+
 
 			<div class="lqd-shape lqd-shape-top" data-negative="false">
 				<svg class="lqd-custom-shape h-15px -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 9"
@@ -1296,13 +1319,13 @@
 					<div class="w-500 sm:w-full flex flex-col mx-auto text-center pt-10">
 						<div class="ld-fancy-heading relative mb-20 animation-element">
 							<h3 class="ld-fh-element inline-block relative mt-0/5em mb-20 text-white">
-								Onde Estamos</h2>
+								Onde Estamos</h3>
 						</div>
 
 					</div>
 				</div>
 				<div class="flex justify-center py-10 ">
-					<div class="flex flex-col md:flex-row justify-center max-w-[1200px] items-center gap-6 ">
+					<div class="flex flex-col md:flex-row justify-center max-w-&#91;1200px&#93; items-center gap-6 ">
 
 						<!-- BLOCO 1 -->
 						<div class="flex md:flex-col lg:flex-col gap-6 w-full lg:w-1/2 items-start">
@@ -1494,30 +1517,51 @@
 	</div>
 	<!-- /GDPR -->
 
-	<!-- Scripts -->
-	<script src="./assets/vendors/jquery.min.js"></script>
-	<script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
-	<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="./assets/vendors/fastdom/fastdom.min.js"></script>
-	<script src="./assets/vendors/fresco/js/fresco.js"></script>
-	<script src="./assets/vendors/lity/lity.min.js"></script>
-	<script src="./assets/vendors/gsap/minified/gsap.min.js"></script>
-	<script src="./assets/vendors/gsap/utils/CustomEase.min.js"></script>
-	<script src="./assets/vendors/gsap/minified/DrawSVGPlugin.min.js"></script>
-	<script src="./assets/vendors/gsap/minified/ScrollTrigger.min.js"></script>
-	<script src="./assets/vendors/draw-shape/liquidDrawShape.min.js"></script>
-	<script src="./assets/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
-	<script src="./assets/vendors/fontfaceobserver.js"></script>
-	<script src="./assets/vendors/tinycolor-min.js"></script>
-	<script src="./assets/vendors/gsap/utils/SplitText.min.js"></script>
-	<script src="./assets/vendors/particles.min.js"></script>
-	<script src="./assets/vendors/flickity/flickity.pkgd.min.js"></script>
-	<script src="./assets/vendors/flickity/flickity-fade.min.js"></script>
-	<script src="./assets/vendors/isotope/isotope.pkgd.min.js"></script>
-	<script src="./assets/vendors/isotope/packery-mode.pkgd.min.js"></script>
-	<script src="./assets/js/liquid-gdpr.min.js"></script>
-	<script src="./assets/js/theme.min.js"></script>
-	<script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
+<!-- Scripts -->
+
+<script src="/assets/vendors/fresco.js"></script>
+<!-- jQuery primeiro -->
+<script src="./assets/vendors/jquery.min.js"></script>
+<!-- jQuery plugins -->
+<script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- Bootstrap (depende do jQuery) -->
+<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Outros vendors independentes -->
+<script src="./assets/vendors/fastdom/fastdom.min.js"></script>
+<script src="./assets/vendors/tinycolor-min.js"></script>
+<script src="./assets/vendors/particles.min.js"></script>
+
+<!-- GSAP + plugins -->
+<script src="./assets/vendors/gsap/minified/gsap.min.js"></script>
+<script src="./assets/vendors/gsap/utils/CustomEase.min.js"></script>
+<script src="./assets/vendors/gsap/minified/DrawSVGPlugin.min.js"></script>
+<script src="./assets/vendors/gsap/minified/ScrollTrigger.min.js"></script>
+<script src="./assets/vendors/gsap/utils/SplitText.min.js"></script>
+
+<!-- Flickity (depende parcialmente de jQuery) -->
+<script src="./assets/vendors/flickity/flickity.pkgd.min.js"></script>
+<script src="./assets/vendors/flickity/flickity-fade.min.js"></script>
+
+<!-- Isotope + Packery -->
+<script src="./assets/vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="./assets/vendors/isotope/packery-mode.pkgd.min.js"></script>
+
+<!-- Outros plugins visuais -->
+<script src="./assets/vendors/lity/lity.min.js"></script>
+<script src="./assets/vendors/draw-shape/liquidDrawShape.min.js"></script>
+<script src="./assets/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
+
+<!-- Scripts que utilizam os vendors acima -->
+<script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
+<script src="./assets/js/liquid-gdpr.min.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+
+<!-- Por último, o script principal da aplicação (Vite) -->
+<script type="module" src="/src/main.jsx"></script>
+
+	
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -1572,26 +1616,26 @@
 	<!-- Fim cursos personalizado -->
 
 
-      <!-- Área para ícones, botões ou outros elementos extras -->
-      <div class="lqd-snickersbar-ext ml-1/5em"></div>
+	<!-- Área para ícones, botões ou outros elementos extras -->
+	<div class="lqd-snickersbar-ext ml-1/5em"></div>
 
-    </div>
-  </div>
-</template>
 
-<!-- Template usado como sentinela para ativar o cabeçalho fixo (sticky header) ao rolar a página -->
-<template id="lqd-temp-sticky-header-sentinel">
-  <div class="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>
-</template>
 
-<!-- Estrutura de modal (janela flutuante) usada para exibir conteúdo dinâmico, como imagens, vídeos ou formulários -->
-<div class="lity" role="dialog" aria-label="Dialog Window (Press escape to close)" tabindex="-1"
-     data-modal-type="default" style="display: none;">
 
-  <!-- Fundo escurecido atrás do modal -->
-  <div class="lity-backdrop"></div>
 
-</div>
+	<!-- Template usado como sentinela para ativar o cabeçalho fixo (sticky header) ao rolar a página -->
+	<template id="lqd-temp-sticky-header-sentinel">
+		<div class="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>
+	</template>
+
+	<!-- Estrutura de modal (janela flutuante) usada para exibir conteúdo dinâmico, como imagens, vídeos ou formulários -->
+	<div class="lity" role="dialog" aria-label="Dialog Window (Press escape to close)" tabindex="-1"
+		data-modal-type="default" style="display: none;">
+
+		<!-- Fundo escurecido atrás do modal -->
+		<div class="lity-backdrop"></div>
+
+	</div>
 
 </body>
 
