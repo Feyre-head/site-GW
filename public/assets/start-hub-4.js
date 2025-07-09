@@ -1,3 +1,5 @@
+	// console.log('Starthub4')
+
 ( () => {
 	const wrapper_093c16a = document.getElementById( 'lqd-lottie-confetti' );
 	const animItem_093c16a = bodymovin.loadAnimation( {
@@ -6,7 +8,7 @@
 		name: 'lqd-lottie-confetti',
 		autoplay: true,
 		loop: false,
-		path: './assets/json/start-hub-4/confetti.json',
+		path: '/assets/json/start-hub-4/confetti.json',
 		rendererSettings: {
 			className: 'lqd-lottie',
 		}
@@ -24,6 +26,8 @@
 			lottie.pause( 'lqd-lottie-confetti' )
 		}
 	} ).observe( wrapper_093c16a )
+
+
 
 	// ******
 
@@ -53,3 +57,4 @@
 		}
 	} ).observe( wrapper_c833602 )
 } )();
+

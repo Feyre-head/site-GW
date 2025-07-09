@@ -7,7 +7,7 @@
 		name: 'lqd-lottie-form-contact',
 		autoplay: true,
 		loop: true,
-		path: './assets/json/start-hub-8/lqd-lottie.json',
+		path: '/assets/json/start-hub-8/lqd-lottie.json',
 		rendererSettings: {
 			className: 'lqd-lottie',
 		}
@@ -23,3 +23,5 @@
 		}
 	} ).observe( formContentLottie )
 } )();
+
+	// console.log('Starthub8')

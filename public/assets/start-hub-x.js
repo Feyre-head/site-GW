@@ -1,3 +1,6 @@
+	// console.log('Starthubx')
+
+
 ( () => {
 	const wrapper_0567a15 = document.getElementById( 'lqd-lottie-features' );
 	const animItem_0567a15 = bodymovin.loadAnimation( {
@@ -6,7 +9,7 @@
 		name: 'lqd-lottie-features',
 		autoplay: true,
 		loop: true,
-		path: './assets/json/start-hub-x/lqd-lottie-features.json',
+		path: '/assets/json/start-hub-x/lqd-lottie-features.json',
 		rendererSettings: {
 			className: 'lqd-lottie',
 		}
