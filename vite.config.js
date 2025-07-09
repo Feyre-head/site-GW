@@ -7,5 +7,8 @@ export default defineConfig({
     outDir: 'dist', // saída do build
     emptyOutDir: true,
   },
+
+
 })
 // Define aliases for easier imports
+
