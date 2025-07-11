@@ -23,23 +23,24 @@ window.jQuery = jQuery;
   };
 })(jQuery);
 
-// Carregar planos e atualizar DOM
-document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    const res = await fetch('http://localhost:3001/api/planos');
-    const planos = await res.json();
+// Ignorar links com hash que não são seletores válidos (ex: /#/rotas de SPA)
+$(function () {
+  $('a[href^="#"]').each(function () {
+    const href = $(this).attr('href');
 
-    const lista = document.getElementById("planos-lista");
-    if (lista && planos.length > 0) {
-      planos.forEach(p => {
-        const item = document.createElement("li");
-        item.textContent = `${p.nome} - R$ ${p.preco}`;
-        lista.appendChild(item);
-      });
+    // Ignora hashes com "/" (como "#/login")
+    if (href.includes('/')) return;
+
+    try {
+      if ($(href).length > 0) {
+        // Aqui você pode adicionar lógica se quiser — por exemplo:
+        // console.log('Elemento com ID válido:', href);
+      }
+    } catch (e) {
+      console.warn('Erro ao usar seletor no href:', href);
     }
-  } catch (err) {
-    console.error("Erro ao buscar planos:", err);
-  }
+  });
 });
+
 
 console.log("Scripts importados via Vite.");

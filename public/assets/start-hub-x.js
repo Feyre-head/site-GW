@@ -1,9 +1,8 @@
-	// console.log('Starthubx')
+(() => {
+	const wrapper_0567a15 = document.getElementById('lqd-lottie-features');
+	if (!wrapper_0567a15) return; // <-- evita erro se o elemento não existir
 
-
-( () => {
-	const wrapper_0567a15 = document.getElementById( 'lqd-lottie-features' );
-	const animItem_0567a15 = bodymovin.loadAnimation( {
+	const animItem_0567a15 = bodymovin.loadAnimation({
 		wrapper: wrapper_0567a15,
 		animType: 'svg',
 		name: 'lqd-lottie-features',
@@ -13,27 +12,28 @@
 		rendererSettings: {
 			className: 'lqd-lottie',
 		}
-	} );
+	});
 
-	lottie.setDirection( 1, 'lqd-lottie-features' );
-	lottie.setSpeed( 1, 'lqd-lottie-features' );
+	lottie.setDirection(1, 'lqd-lottie-features');
+	lottie.setSpeed(1, 'lqd-lottie-features');
+	lottie.pause('lqd-lottie-features');
 
-	lottie.pause( 'lqd-lottie-features' );
-
-	new IntersectionObserver( ( [ entry ] ) => {
-		if ( entry.isIntersecting ) {
-			lottie.play( 'lqd-lottie-features' );
+	new IntersectionObserver(([entry]) => {
+		if (entry.isIntersecting) {
+			lottie.play('lqd-lottie-features');
 		} else {
-			lottie.pause( 'lqd-lottie-features' )
+			lottie.pause('lqd-lottie-features');
 		}
-	} ).observe( wrapper_0567a15 )
-} )();
+	}).observe(wrapper_0567a15);
+})();
+
 
 // ******
+(() => {
+	const wrapper_732b232f = document.getElementById('lqd-lottie-footer');
+	if (!wrapper_732b232f) return; // <-- evita erro
 
-( () => {
-	const wrapper_732b232f = document.getElementById( 'lqd-lottie-footer' );
-	const animItem_732b232f = bodymovin.loadAnimation( {
+	const animItem_732b232f = bodymovin.loadAnimation({
 		wrapper: wrapper_732b232f,
 		animType: 'svg',
 		name: 'lqd-lottie-footer',
@@ -43,19 +43,19 @@
 		rendererSettings: {
 			className: 'lqd-lottie',
 		}
-	} );
+	});
 
-	lottie.setDirection( 1, 'lqd-lottie-footer' );
-	lottie.setSpeed( 0.5, 'lqd-lottie-footer' );
+	lottie.setDirection(1, 'lqd-lottie-footer');
+	lottie.setSpeed(0.5, 'lqd-lottie-footer');
+	lottie.pause('lqd-lottie-footer');
 
-	lottie.pause( 'lqd-lottie-footer' );
-
-	new IntersectionObserver( ( [ entry ] ) => {
-		if ( entry.isIntersecting ) {
-			lottie.play( 'lqd-lottie-footer' );
+	new IntersectionObserver(([entry]) => {
+		if (entry.isIntersecting) {
+			lottie.play('lqd-lottie-footer');
 		} else {
-			lottie.pause( 'lqd-lottie-footer' )
+			lottie.pause('lqd-lottie-footer');
 		}
-	} ).observe( wrapper_732b232f )
-} )();
+	}).observe(wrapper_732b232f);
+})();
+
 
