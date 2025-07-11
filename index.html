@@ -15,16 +15,22 @@
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="./assets/images/common/og-image.jpg">
 
+	<!-- Estilos personalizados do template -->
 	<link rel="stylesheet" href="./assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
 	<link rel="stylesheet" href="./assets/css/theme.min.css">
 	<link rel="stylesheet" href="./assets/css/utility.min.css">
 	<link rel="stylesheet" href="./assets/css/demo/start-hub-1/base.css">
 	<link rel="stylesheet" href="./assets/css/demo/start-hub-1/start-hub-1.css">
-	<link rel="stylesheet" href="./dist/tailwind-output.css" />
+
+	<!--  Mantém apenas o CSS gerado por Tailwind -->
+	<link rel="stylesheet" href="/tailwindcss/index.css">
+
+	<!-- Tema extra (se necessário) -->
+	<link rel="stylesheet" href="./tailwindcss/theme.css">
+
+	<!-- Favicon -->
 	<link rel="shortcut icon" href="./assets/img/Favicon3.png" type="image/x-icon">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Nunito:wght@400;600;700&family=Roboto&display=swap"
 		rel="stylesheet">
@@ -42,7 +48,7 @@
 		<header id="site-header home" class="main-header main-header-overlay sticky-header-noshadow"
 			data-sticky-header="true" data-sticky-values-measured="false">
 
-
+			<!-- Header Suporte-->
 			<section class="lqd-section lqd-hide-onstuck bg-no-repeat bg-center bg-cover bg-white-0 lg:hidden"
 				style="background-image: url('./assets/img/header-bar-bg.png');">
 				<div class="w-full flex items-center justify-center h-35">
@@ -57,7 +63,7 @@
 				</div>
 			</section>
 
-
+			<!-- Icons Social-->
 			<section class="lqd-section lqd-hide-onstuck bg-white-0 -mb-40 pt-5 lg:hidden" data-custom-animations="true"
 				data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"opacity":0} , "animations":{"opacity":1}}'>
 				<div class="container p-0">
@@ -91,6 +97,7 @@
 				</div>
 			</section>
 
+			<!-- Menu Navbar -->
 			<section class="lqd-section mt-40 lg:mt-0 md:hidden">
 				<div class="container p-0">
 					<div
@@ -117,10 +124,10 @@
 												href="https://api.whatsapp.com/send/?phone=5546999310469&text&type=phone_number&app_absent=0"
 												target="_blank">Contato</a></li>
 										<li><a class="text-darkgreen leading-30"
-												href="https://www.gwinternet.com.br/ca/#/segunda-via" target="_blank">2ª
+												href="https://www.gwinternet.com.br/ca#segunda-via" target="_blank">2ª
 												via do boleto</a></li>
 										<li><a class="text-darkgreen leading-30"
-												href="https://www.gwinternet.com.br/ca/#/login" target="_blank">Área do
+												href="https://www.gwinternet.com.br/ca#login" target="_blank">Área do
 												Cliente</a></li>
 									</ul>
 								</div>
@@ -131,6 +138,7 @@
 				</div>
 			</section>
 
+			<!-- Navbar mobile invisivel em desktop -->
 			<div class="lqd-mobile-sec relative">
 				<div
 					class="lqd-mobile-sec-inner navbar-header flex items-center justify-center w-full bg-white relative p-5">
@@ -177,10 +185,10 @@
 								<a href="#how-it-work">Contato</a>
 							</li>
 							<li>
-								<a href="https://www.gwinternet.com.br/ca/#/segunda-via">2ª Via do Boleto</a>
+								<a href="https://www.gwinternet.com.br/ca#segunda-via">2ª Via do Boleto</a>
 							</li>
 							<li>
-								<a href="https://www.gwinternet.com.br/ca/#/login">Área do Cliente</a>
+								<a href="https://www.gwinternet.com.br/ca#login">Área do Cliente</a>
 							</li>
 						</ul>
 					</div>
@@ -203,6 +211,8 @@
 						</div>
 					</div>
 
+
+					<!-- Conecte com GW Telecom -->
 					<div class="container">
 						<div class="row">
 							<div class="col col-12 col-md-7 col-xl-6" data-custom-animations="true"
@@ -263,6 +273,8 @@
 										</div>
 									</div>
 									<div class="flex w-full items-center flex-wrap flex-xl-nowrap pt-20">
+
+										<!-- Banner Telecom -->
 										<div
 											class="lqd-imggrp-single block relative w-15percent sm:w-full animation-element">
 											<div
@@ -300,6 +312,8 @@
 						</div>
 					</div>
 				</section>
+
+				<!-- Como funciona -->
 				<section class="lqd-section process pt-60 pb-100" id="process" data-custom-animations="true"
 					data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"x": "-10px", "y": "10px", "opacity":0} , "animations":{"x": "0px", "y": "0px", "opacity":1}}'>
 					<div class="container">
@@ -419,6 +433,8 @@
 						</div>
 					</div>
 				</section>
+
+				<!-- Informativo -->
 				<section class="lqd-section about pt-120" id="about">
 					<div class="container">
 						<div class="row">
@@ -645,6 +661,8 @@
 						</div>
 					</div>
 				</section>
+
+				<!-- Planos -->
 				<section class="lqd-section pricing pt-60 pb-360 bg-transparent transition-all" id="pricing"
 					data-section-luminosity="dark"
 					style="background-image: linear-gradient(90deg, #2b3b4f 0%, #191C33 100%);" data-parallax="true"
@@ -721,6 +739,8 @@
 						</div>
 					</div>
 				</section>
+
+				<!-- Suporte -->
 				<section class="lqd-section how-it-work pt-80 pb-80" id="how-it-work">
 					<div class="container">
 						<div class="row">
@@ -861,6 +881,8 @@
 			</div>
 		</main>
 
+
+		<!-- Onde estamos -->
 		<section class="lqd-section testimonials py-80 transition-all bg-slate-900 " data-section-luminosity="dark"
 			data-custom-animations="true"
 			data-ca-options='{"animationTarget": ".animation-element", "ease": "power4.out", "initValues":{"x": "-10px", "y": "10px", "opacity":0} , "animations":{"x": "0px", "y": "0px", "opacity":1}}'>
@@ -926,6 +948,8 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Footer -->
 		<footer id="site-footer" class="main-footer">
 			<section class="lqd-section footer-content pt-40 text-black" data-section-luminosity="dark">
 				<div class="container">
@@ -980,7 +1004,7 @@
 							<div class="lqd-fancy-menu lqd-custom-menu relative left lqd-menu-td-none">
 								<ul class="reset-ul link-14 link-font-normal">
 									<li class="mb-15">
-										<a class="text-slate-500" href="https://www.gwinternet.com.br/ca/#/login"
+										<a class="text-slate-500" href="https://www.gwinternet.com.br/ca#login"
 											target="_blank">
 											<span
 												class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
@@ -988,7 +1012,7 @@
 										</a>
 									</li>
 									<li class="mb-15">
-										<a class="text-slate-500" href="https://www.gwinternet.com.br/ca/#/segunda-via">
+										<a class="text-slate-500" href="https://www.gwinternet.com.br/ca#segunda-via">
 											<span
 												class="link-icon inline-flex hide-if-empty left-icon icon-next-to-label"></span>
 											<span>2ª Via do Boleto</span>
@@ -1072,33 +1096,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="./assets/vendors/jquery.min.js"></script>
-	<script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
-	<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="./assets/vendors/fastdom/fastdom.min.js"></script>
-	<script src="./assets/vendors/fresco/js/fresco.js"></script>
-	<script src="./assets/vendors/lity/lity.min.js"></script>
-	<script src="./assets/vendors/gsap/minified/gsap.min.js"></script>
-	<script src="./assets/vendors/gsap/utils/CustomEase.min.js"></script>
-	<script src="./assets/vendors/gsap/minified/DrawSVGPlugin.min.js"></script>
-	<script src="./assets/vendors/gsap/minified/ScrollTrigger.min.js"></script>
-	<script src="./assets/vendors/draw-shape/liquidDrawShape.min.js"></script>
-	<script src="./assets/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
-	<script src="./assets/vendors/fontfaceobserver.js"></script>
-	<script src="./assets/vendors/tinycolor-min.js"></script>
-	<script src="./assets/vendors/gsap/utils/SplitText.min.js"></script>
-	<script src="./assets/vendors/particles.min.js"></script>
-	<script src="./assets/vendors/flickity/flickity.pkgd.min.js"></script>
-	<script src="./assets/vendors/flickity/flickity-fade.min.js"></script>
-	<script src="./assets/vendors/isotope/isotope.pkgd.min.js"></script>
-	<script src="./assets/vendors/isotope/packery-mode.pkgd.min.js"></script>
-	<script src="./assets/js/liquid-gdpr.min.js"></script>
-	<script src="./assets/js/theme.min.js"></script>
-	<script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	<script src="./assets/js/planos.js"></script>
-	
+
+
 	<div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
 	<div
 		class="lqd-cc--el lqd-cc-solid lqd-cc-explore flex items-center justify-center rounded-full fixed pointer-events-none">
@@ -1162,6 +1161,55 @@
 		<div class="lity-backdrop"></div>
 
 	</div>
+
+	<!--  Dependências Base: jQuery e Bootstrap -->
+	<script src="./assets/vendors/jquery.min.js"></script> <!-- jQuery base -->
+
+	<script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script> <!-- jQuery UI -->
+	<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script> <!-- Bootstrap (depende do jQuery) -->
+
+	<!--  Performance & Utilidades Gerais -->
+	<script src="./assets/vendors/fastdom/fastdom.min.js"></script> <!-- Otimização de performance com DOM batching -->
+	<script src="./assets/vendors/tinycolor-min.js"></script> <!-- Manipulação de cores -->
+	<script src="./assets/vendors/fontfaceobserver.js"></script> <!-- Observação de carregamento de fontes -->
+
+	<!--  Plugins de Galeria / Lightbox / Modais -->
+	<script src="./assets/vendors/fresco/js/fresco.js"></script> <!-- Lightbox para imagens e galerias -->
+	<script src="./assets/vendors/lity/lity.min.js"></script> <!-- Lightbox mais leve -->
+
+	<!--  GSAP e animações -->
+	<script src="./assets/vendors/gsap/minified/gsap.min.js"></script> <!-- Núcleo do GSAP -->
+	<script src="./assets/vendors/gsap/utils/CustomEase.min.js"></script> <!-- Easing personalizado -->
+	<script src="./assets/vendors/gsap/utils/SplitText.min.js"></script> <!-- Animações em textos -->
+	<script src="./assets/vendors/gsap/minified/ScrollTrigger.min.js"></script> <!-- Animações ao rolar -->
+	<script src="./assets/vendors/gsap/minified/DrawSVGPlugin.min.js"></script> <!-- Animações SVG -->
+	<script src="./assets/vendors/draw-shape/liquidDrawShape.min.js"></script> <!-- Desenho animado personalizado -->
+	<script src="./assets/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
+	<!-- Animação tipo "blob" fluido -->
+
+	<!--  Plugins de Galeria e Slides -->
+	<script src="./assets/vendors/flickity/flickity.pkgd.min.js"></script> <!-- Carrossel responsivo -->
+	<script src="./assets/vendors/flickity/flickity-fade.min.js"></script> <!-- Animação de fade para Flickity -->
+
+	<!--  Layout dinâmico com grid -->
+	<script src="./assets/vendors/isotope/isotope.pkgd.min.js"></script> <!-- Layout em grid filtrável -->
+	<script src="./assets/vendors/isotope/packery-mode.pkgd.min.js"></script> <!-- Modo "packery" para isotope -->
+
+	<!--  Efeitos visuais adicionais -->
+	<script src="./assets/vendors/particles.min.js"></script> <!-- Partículas animadas no fundo -->
+
+	<!--  Scripts do tema -->
+	<script src="./assets/js/liquid-gdpr.min.js"></script> <!-- GDPR compliance (cookies etc) -->
+	<script src="./assets/js/theme.min.js"></script> <!-- Tema principal -->
+	<script src="./assets/js/liquid-ajax-contact-form.min.js"></script> <!-- Contato com AJAX -->
+
+	<!--  Ícones modernos (Ionicons) -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!--  Script personalizado do projeto -->
+	<script src="./assets/js/planos.js"></script> <!-- Scripts feitos por você -->
+
 
 </body>
 

@@ -1,7 +1,7 @@
 async function createPricingCards() {
   let apiDat = [];
   try {
-    const response = await fetch("http://192.168.3.52:3000/planos/1");
+    const response = await fetch("http://172.16.20.238:3000/planos");
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

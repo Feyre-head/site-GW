@@ -83,7 +83,7 @@
   "scripts": {
     "lint": "tsc --noEmit",
     "build": "tsup-node --env.NODE_ENV production",
-    "dev": "tsup-node --env.NODE_ENV development --watch",
+    "dev": "tailwindcss -i ./tailwind.css -o ./dist/index.css --watch",
     "test:ui": "playwright test"
   }
 }
